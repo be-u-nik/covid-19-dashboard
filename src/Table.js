@@ -4,8 +4,8 @@ import numeral from "numeral";
 
 function Table({ countries }) {
   return (
-    <div className="table mh-100 overflow-auto">
-      <table>
+    <div className="d-flex table mh-100 overflow-auto">
+      <table style={{ width: "100%" }}>
         <tbody>
           {countries.map(({ country, cases }) => (
             <tr key={country}>
