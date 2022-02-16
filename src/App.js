@@ -97,14 +97,14 @@ function App() {
         <Col lg={8}>
           <Container
             fluid
-            className="app__top__stats d-flex flex-row justify-content-between"
+            className="app__top__stats d-flex flex-row justify-content-between overflow-x-scroll"
           >
             {/* infobox1 */}
             <InfoBox
               theme="red"
               active={casesType === "cases"}
               onClick={(e) => setcasesType("cases")}
-              title="Coronovirus Cases"
+              title="COVID Cases"
               cases={statDecoration(countryInfo.todayCases)}
               total={numeral(countryInfo.cases).format("0,0")}
             ></InfoBox>

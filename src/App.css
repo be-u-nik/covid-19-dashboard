@@ -25,3 +25,10 @@ body {
 .table tr:nth-of-type(odd) {
   background-color: #f5f6fa;
 }
+.app__top__stats {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.app__top__stats::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
