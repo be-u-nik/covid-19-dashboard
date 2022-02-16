@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Col, Row, Form } from "react-bootstrap";
 import "./App.css";
 import InfoBox from "./InfoBox";
