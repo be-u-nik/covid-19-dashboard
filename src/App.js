@@ -87,8 +87,10 @@ function App() {
             onChange={onCountryChange}
           >
             <option value="worldwide">Worldwide</option>
-            {countries.map((country) => (
-              <option value={country.value}>{country.name}</option>
+            {countries.map((country, index) => (
+              <option key={index} value={country.value}>
+                {country.name}
+              </option>
             ))}
           </Form.Select>
         </Col>

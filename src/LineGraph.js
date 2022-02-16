@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
+// import { TimeScale, LinearScale, Chart } from "chart.js";
 import numeral from "numeral";
-import Chart from "chart.js/auto";
 import "chartjs-adapter-moment";
-
+// Chart.register(TimeScale, LinearScale);
+import Chart from "chart.js/auto";
 const options = {
   legend: {
     display: false,
@@ -75,7 +76,7 @@ function LineGraph({ caseType, countryCode = "all" }) {
             countryCode === "all"
               ? getChartData(data, caseType)
               : getChartData(data.timeline, caseType);
-          console.log(data);
+          // console.log(data);
           setdata(chartdata);
         });
     };
